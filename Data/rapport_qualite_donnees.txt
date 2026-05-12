@@ -1,0 +1,44 @@
+RAPPORT QUALITÉ DONNÉES — INFECTIO
+
+Fichiers sources analysés : qcm.csv, themes.csv, cas_cliniques.csv
+
+Corrections appliquées automatiquement :
+- Correction des 4 lignes QCM décalées : QCM_2024_S2_BACT_DL3_016, QCM_2024_S2_BACT_DL3_018, QCM_2024_S2_BACT_DL3_019, QCM_2024_S2_BACT_DL3_020
+- Suppression des espaces en début/fin de cellule
+- Remplissage des statuts vides par 'Non vu'
+- Renommage des id_theme doublons avec suffixes _DUP2, _DUP3
+- Création de progression.csv
+- Création de analyse_priorites.csv
+
+qcm_clean: 839 lignes, 18 colonnes, doublons ID = 0
+Sous-matières:
+sous_matiere_app
+Virologie                  271
+Parasitologie-Mycologie    262
+Bactériologie              248
+Transversal-Nosocomial      58
+
+themes_clean: 460 lignes, 12 colonnes, doublons ID = 0
+Sous-matières:
+sous_matiere_app
+Bactériologie              149
+Virologie                  142
+Parasitologie-Mycologie    135
+Transversal-Nosocomial      34
+
+cas_clean: 30 lignes, 16 colonnes, doublons ID = 0
+Sous-matières:
+sous_matiere_app
+Bactériologie              11
+Parasitologie-Mycologie    10
+Virologie                   9
+
+Types QCM après correction:
+type
+QCM     672
+QRU     110
+QROC     55
+QCU       2
+
+Progression: 1329 objets de révision
+Analyse priorités: 460 thèmes classés
